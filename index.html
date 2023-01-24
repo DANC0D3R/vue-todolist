@@ -30,11 +30,14 @@
             <!-- MAIN -->
             <main>
                 <div class="task-list">
-                    <p>Lista vuota, aggiungi la tua prima task!</p>
-                    <ul>
-                        <li>
-                            <span>
-                                Fare la spesa
+                    <p v-if="todolist.length == 0">Lista vuota, aggiungi la tua prima task!</p>
+                    <ul v-else>
+                        <li v-for="(item, index) in todolist">
+                            <span :class="{
+                                'done': item.done == true
+                            }"
+                            @click="done(item)">
+                                {{item.text}}
                             </span>
                             <i class="fa-solid fa-xmark"></i>
                         </li>
