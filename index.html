@@ -7,11 +7,41 @@
         <meta name="author" content="Daniele Minieri">
         <title>Vue To Do List</title>
 
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <!-- Stile -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!-- HEADER -->
+        <div id="app">
+            <header>
+                <img src="img/logo.png" alt="Logo">
+                <div class="add-task">
+                    <input type="text" placeholder="Nuova task">
+                    <button>Aggiungi</button>
+                </div>
+            </header>
 
+            <!-- MAIN -->
+            <main>
+                <div class="task-list">
+                    <p>Lista vuota, aggiungi la tua prima task!</p>
+                    <ul>
+                        <li>
+                            <span>
+                                Fare la spesa
+                            </span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
         <!-- Vuejs -->
         <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
         <!-- Script -->

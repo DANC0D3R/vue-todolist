@@ -1,0 +1,100 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* REGOLE GENERALI */
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+/* HEADER */
+header{
+    padding: 2rem;
+
+    text-align: center;
+}
+
+header img{
+    height: 100px;
+}
+
+header .add-task{
+    margin-top: 2rem;
+}
+
+header .add-task input{
+    width: 400px;
+
+    margin-right: 1rem;
+    padding: 0.7rem 1rem;
+
+    border-radius: 10px;
+    border: 2px solid #A9A9A9;
+}
+
+header .add-task button{
+    padding: 0.7rem 1rem;
+
+    border-radius: 10px;
+    border: 2px solid #A9A9A9;
+
+    cursor: pointer;
+}
+
+header .add-task button:active{
+    border-color: #000000;
+}
+
+
+/* MAIN */
+p{
+    font-size: x-large;
+    
+    color: #888888;
+
+    user-select: none;
+}
+
+.task-list{
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 2rem;
+
+    border-radius: 15px;
+    background-color: #F5F7F7;
+}
+
+.task-list ul{
+    list-style: none;
+}  
+
+.task-list ul li{
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #DADEE1;
+}
+
+.task-list ul li:hover{
+    background-color: #FFFFFF;
+}
+
+.task-list ul li > *{
+    padding: 0.5rem 1rem;
+    
+    user-select: none;
+}
+
+.task-list ul li span{
+    flex-grow: 1
+}
+
+.fa-xmark:hover{
+    cursor: pointer;
+}
