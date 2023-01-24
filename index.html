@@ -39,7 +39,7 @@
                             @click="done(item)">
                                 {{item.text}}
                             </span>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
                         </li>
                     </ul>
                 </div>

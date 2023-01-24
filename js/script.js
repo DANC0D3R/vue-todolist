@@ -24,4 +24,10 @@ createApp({
             ]
         }
     },
+    methods: {
+        // Rimuove un task
+        removeTask: function(index){
+            this.todolist.splice(index,1);
+        },
+    }
 }).mount('#app')
