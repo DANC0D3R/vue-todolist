@@ -29,5 +29,15 @@ createApp({
         removeTask: function(index){
             this.todolist.splice(index,1);
         },
+        // Aggiunge una task
+        addTask: function(){
+            if(this.newTask != ''){
+                this.todolist.push({
+                    text: this.newTask,
+                    done: false
+                });
+                this.newTask = '';
+            }
+        },
     }
 }).mount('#app')

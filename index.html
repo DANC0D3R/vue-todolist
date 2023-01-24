@@ -22,8 +22,8 @@
             <header>
                 <img src="img/logo.png" alt="Logo">
                 <div class="add-task">
-                    <input type="text" placeholder="Nuova task">
-                    <button>Aggiungi</button>
+                    <input type="text" placeholder="Nuova task" v-model="newTask">
+                    <button @click="addTask()">Aggiungi</button>
                 </div>
             </header>
 
