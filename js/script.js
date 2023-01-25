@@ -39,5 +39,9 @@ createApp({
                 this.newTask = '';
             }
         },
+        // Task completata
+        done: function(item){
+            item.done = !item.done;
+        }
     }
 }).mount('#app')

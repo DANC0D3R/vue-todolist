@@ -14,7 +14,7 @@ body{
 
 /* HEADER */
 header{
-    padding: 2rem;
+    padding: 1rem;
 
     text-align: center;
 }
@@ -24,7 +24,7 @@ header img{
 }
 
 header .add-task{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 header .add-task input{
@@ -92,7 +92,15 @@ p{
 }
 
 .task-list ul li span{
-    flex-grow: 1
+    flex-grow: 1;
+
+    cursor: pointer;
+}
+
+.task-list ul li span.done{
+    text-decoration:line-through;
+
+    color: #888888;
 }
 
 .fa-xmark:hover{
